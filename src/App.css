@@ -2824,50 +2824,50 @@ footer {
 /* HIGH CONTRAST */
 
 .app-shell.high-contrast {
-  color: #111111;
+  color: var(--mc-text);
 }
 
 .app-shell.high-contrast .accessibility-card,
 .app-shell.high-contrast .stat-card {
-  border: 2px solid #222222;
+  border: 2px solid var(--mc-border-strong);
 }
 
 .app-shell.high-contrast p,
 .app-shell.high-contrast span {
-  color: #222222;
+  color: var(--mc-text);
 }
 
 /* DARK MODE */
 
 .app-shell.dark-mode {
-  background: #18221e;
-  color: #f3f6f2;
+  background: var(--mc-surface);
+  color: var(--mc-text);
 }
 
 .app-shell.dark-mode .main-content {
-  background: #18221e;
-  color: #f3f6f2;
+  background: var(--mc-surface);
+  color: var(--mc-text);
 }
 
 .app-shell.dark-mode .accessibility-card,
 .app-shell.dark-mode .stat-card,
 .app-shell.dark-mode .journal-card {
-  background: #26342d;
-  border-color: #435449;
-  color: #f3f6f2;
+  background: var(--mc-surface-2);
+  border-color: var(--mc-border);
+  color: var(--mc-text);
 }
 
 .app-shell.dark-mode .accessibility-card h3,
 .app-shell.dark-mode .accessibility-card p,
 .app-shell.dark-mode .accessibility-toggle,
 .app-shell.dark-mode .accessibility-volume {
-  color: #f3f6f2;
+  color: var(--mc-text);
 }
 
 .app-shell.dark-mode .accessibility-card select {
-  background: #26342d;
-  color: #ffffff;
-  border-color: #64776a;
+  background: var(--mc-surface-2);
+  color: var(--mc-text);
+  border-color: var(--mc-border);
 }
 
 /* SMALL SCREENS */
@@ -5980,13 +5980,13 @@ footer {
 
 .app-shell.dark-mode {
   color-scheme: dark;
-  background: #111827 !important;
-  color: #f1f5f9 !important;
+  background: var(--mc-bg) !important;
+  color: var(--mc-text) !important;
 }
 
 .app-shell.dark-mode .main-content {
-  background: #111827 !important;
-  color: #f1f5f9 !important;
+  background: var(--mc-bg) !important;
+  color: var(--mc-text) !important;
 }
 
 
@@ -6001,23 +6001,23 @@ footer {
   legend, summary, figcaption,
   dt, dd, blockquote, caption
 ) {
-  color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
   opacity: 1 !important;
   text-shadow: none !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Eyebrows and secondary labels */
 .app-shell.dark-mode .main-content .eyebrow,
 .app-shell.dark-mode .main-content small {
-  color: #cbd5e1 !important;
+  color: var(--mc-text-muted) !important;
   opacity: 1 !important;
 }
 
 /* Links */
 .app-shell.dark-mode .main-content a {
-  color: #bfdbfe !important;
-  -webkit-text-fill-color: #bfdbfe !important;
+  color: var(--mc-blue) !important;
+  -webkit-text-fill-color: var(--mc-blue) !important;
 }
 
 
@@ -6030,16 +6030,16 @@ footer {
 .app-shell.dark-mode .welcome-art,
 .app-shell.dark-mode .welcome-tag,
 .app-shell.dark-mode .island-caption {
-  color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
 }
 
 .app-shell.dark-mode .welcome h1,
 .app-shell.dark-mode .welcome p,
 .app-shell.dark-mode .welcome-tag,
 .app-shell.dark-mode .island-caption {
-  color: #ffffff !important;
+  color: var(--mc-text) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: #ffffff !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 
@@ -6050,17 +6050,17 @@ footer {
 .app-shell.dark-mode .stat-card,
 .app-shell.dark-mode .activity-card,
 .app-shell.dark-mode .accessibility-card {
-  background-color: #263449 !important;
-  border-color: #526176 !important;
+  background-color: var(--mc-surface-2) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* Keep card text readable */
 .app-shell.dark-mode .stat-card *,
 .app-shell.dark-mode .activity-card *,
 .app-shell.dark-mode .accessibility-card * {
-  color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 
@@ -6070,8 +6070,8 @@ footer {
 
 .app-shell.dark-mode .bottom-grid,
 .app-shell.dark-mode .bottom-grid > * {
-  color: #f1f5f9 !important;
-  border-color: #526176 !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 .app-shell.dark-mode .bottom-grid h1,
@@ -6082,9 +6082,9 @@ footer {
 .app-shell.dark-mode .bottom-grid label,
 .app-shell.dark-mode .bottom-grid small,
 .app-shell.dark-mode .bottom-grid strong {
-  color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Build Your Day nested panels */
@@ -6092,15 +6092,15 @@ footer {
 .app-shell.dark-mode .main-content [class*="task"],
 .app-shell.dark-mode .main-content [class*="progress"],
 .app-shell.dark-mode .main-content [class*="template"] {
-  color: #f1f5f9 !important;
-  border-color: #526176 !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* Build Your Day panel backgrounds */
 .app-shell.dark-mode .main-content [class*="task-card"],
 .app-shell.dark-mode .main-content [class*="template-card"],
 .app-shell.dark-mode .main-content [class*="progress-card"] {
-  background-color: #263449 !important;
+  background-color: var(--mc-surface-2) !important;
 }
 
 
@@ -6109,27 +6109,27 @@ footer {
    --------------------------------------------------------- */
 
 .app-shell.dark-mode .main-content [class*="world"] {
-  color: #f1f5f9 !important;
-  border-color: #526176 !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 .app-shell.dark-mode .main-content [class*="world"] :is(
   h1, h2, h3, h4, p, span,
   strong, small, label, button
 ) {
-  color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* World controls and information panels */
 .app-shell.dark-mode .main-content [class*="world"] :is(
   button, select, input
 ) {
-  background-color: #263449 !important;
-  border-color: #64748b !important;
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
+  background-color: var(--mc-surface-2) !important;
+  border-color: var(--mc-border) !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 
@@ -6145,33 +6145,33 @@ footer {
 .app-shell.dark-mode .reward-history,
 .app-shell.dark-mode .reward-history-list,
 .app-shell.dark-mode .reward-history-item {
-  background-color: #202b3b !important;
-  color: #f1f5f9 !important;
-  border-color: #526176 !important;
+  background-color: var(--mc-surface) !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 .app-shell.dark-mode .rewards-section :is(
   h1, h2, h3, h4, p, span,
   strong, small, label
 ) {
-  color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Total points */
 .app-shell.dark-mode .rewards-balance {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
   font-weight: 800 !important;
 }
 
 /* Recent achievements */
 .app-shell.dark-mode .reward-history,
 .app-shell.dark-mode .reward-history * {
-  color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 
@@ -6181,34 +6181,34 @@ footer {
 
 .app-shell.dark-mode .main-content [class*="journal"],
 .app-shell.dark-mode .main-content [class*="journal"] * {
-  color: #f1f5f9 !important;
-  border-color: #526176 !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
   opacity: 1 !important;
   text-shadow: none !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Journal panels */
 .app-shell.dark-mode .main-content [class*="journal"] {
-  background-color: #202b3b !important;
+  background-color: var(--mc-surface) !important;
 }
 
 /* Journal editor and text areas */
 .app-shell.dark-mode .main-content [class*="journal"] :is(
   input, textarea, select, option
 ) {
-  background-color: #172234 !important;
-  color: #ffffff !important;
-  border: 1px solid #718096 !important;
-  -webkit-text-fill-color: #ffffff !important;
+  background-color: var(--mc-surface) !important;
+  color: var(--mc-text) !important;
+  border: 1px solid var(--mc-border) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Journal buttons */
 .app-shell.dark-mode .main-content [class*="journal"] button {
-  background-color: #34445a !important;
-  color: #ffffff !important;
-  border-color: #64748b !important;
-  -webkit-text-fill-color: #ffffff !important;
+  background-color: var(--mc-surface-2) !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Preserve the drawing canvas */
@@ -6224,18 +6224,18 @@ footer {
 .app-shell.dark-mode .main-content :is(
   input, textarea, select, option
 ) {
-  background-color: #172234 !important;
-  color: #ffffff !important;
-  border-color: #718096 !important;
-  -webkit-text-fill-color: #ffffff !important;
+  background-color: var(--mc-surface) !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 .app-shell.dark-mode .main-content :is(
   input, textarea
 )::placeholder {
-  color: #cbd5e1 !important;
+  color: var(--mc-text-muted) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: #cbd5e1 !important;
+  -webkit-text-fill-color: var(--mc-text-muted) !important;
 }
 
 
@@ -6244,9 +6244,9 @@ footer {
    --------------------------------------------------------- */
 
 .app-shell.dark-mode .main-content button {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
-  border-color: #64748b;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
+  border-color: var(--mc-border);
 }
 
 .app-shell.dark-mode .main-content button:disabled {
@@ -6260,15 +6260,15 @@ footer {
 
 .app-shell.dark-mode .accessibility-section,
 .app-shell.dark-mode .accessibility-card {
-  background-color: #202b3b !important;
-  color: #f1f5f9 !important;
-  border-color: #526176 !important;
+  background-color: var(--mc-surface) !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 .app-shell.dark-mode .accessibility-section * {
-  color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 
@@ -6277,16 +6277,16 @@ footer {
    --------------------------------------------------------- */
 
 .app-shell.dark-mode .sidebar {
-  background-color: #172234 !important;
-  border-color: #3b485b !important;
+  background-color: var(--mc-surface) !important;
+  border-color: var(--mc-border) !important;
 }
 
 .app-shell.dark-mode .sidebar :is(
   a, button, span, p, strong, small
 ) {
-  color: #e8edf5 !important;
+  color: var(--mc-text) !important;
   opacity: 1 !important;
-  -webkit-text-fill-color: #e8edf5 !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 
@@ -6302,7 +6302,7 @@ footer {
   .reward-card,
   .accessibility-card
 ) {
-  border-color: #526176 !important;
+  border-color: var(--mc-border) !important;
 }
 
 
@@ -6318,8 +6318,8 @@ footer {
 #root .app-shell.dark-mode h4,
 #root .app-shell.dark-mode h5,
 #root .app-shell.dark-mode h6 {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Inputs and editable text */
@@ -6327,29 +6327,29 @@ footer {
 #root .app-shell.dark-mode textarea,
 #root .app-shell.dark-mode select,
 #root .app-shell.dark-mode option {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
-  caret-color: #ffffff !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
+  caret-color: var(--mc-text) !important;
 }
 
 /* Placeholder text */
 #root .app-shell.dark-mode input::placeholder,
 #root .app-shell.dark-mode textarea::placeholder {
-  color: #cbd5e1 !important;
-  -webkit-text-fill-color: #cbd5e1 !important;
+  color: var(--mc-text-muted) !important;
+  -webkit-text-fill-color: var(--mc-text-muted) !important;
   opacity: 1 !important;
 }
 
 /* Disabled controls remain readable */
 #root .app-shell.dark-mode button:disabled,
 #root .app-shell.dark-mode input:disabled {
-  color: #cbd5e1 !important;
-  -webkit-text-fill-color: #cbd5e1 !important;
+  color: var(--mc-text-muted) !important;
+  -webkit-text-fill-color: var(--mc-text-muted) !important;
 }
 
 /* Text inside SVG illustrations */
 #root .app-shell.dark-mode svg text {
-  fill: #f1f5f9 !important;
+  fill: var(--mc-text) !important;
 }
 
 /* Preserve the white drawing surface in Journal */
@@ -6366,8 +6366,8 @@ footer {
 #root .app-shell.dark-mode,
 #root .mc-parent.dark-mode,
 #root .parent-access-shell.dark-mode {
-  background: #111827 !important;
-  color: #f1f5f9 !important;
+  background: var(--mc-bg) !important;
+  color: var(--mc-text) !important;
   color-scheme: dark;
 }
 
@@ -6392,15 +6392,15 @@ footer {
 #root .app-shell.dark-mode .planner-progress,
 #root .app-shell.dark-mode .journal-editor,
 #root .app-shell.dark-mode .journal-library {
-  background-color: #1f2937 !important;
-  border-color: #374151 !important;
+  background-color: var(--mc-surface) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* My World */
 #root .app-shell.dark-mode .my-world-section {
-  background: #17251f !important;
-  color: #f1f5f9 !important;
-  border-color: #34483b !important;
+  background: var(--mc-surface) !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* My World inner panels and controls */
@@ -6410,22 +6410,22 @@ footer {
 #root .app-shell.dark-mode .my-world-section [class*="custom"],
 #root .app-shell.dark-mode .my-world-section [class*="inventory"],
 #root .app-shell.dark-mode .my-world-section [class*="progress"] {
-  background-color: #24352c !important;
-  border-color: #405448 !important;
+  background-color: var(--mc-surface-2) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* My World theme tags and selectable options */
 #root .app-shell.dark-mode .my-world-section button,
 #root .app-shell.dark-mode .my-world-section select,
 #root .app-shell.dark-mode .my-world-section input {
-  color: #f1f5f9 !important;
-  border-color: #52685a !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* Home welcome panel */
 #root .app-shell.dark-mode .welcome {
-  background-color: #263b34 !important;
-  color: #f8fafc !important;
+  background-color: var(--mc-surface-2) !important;
+  color: var(--mc-text) !important;
 }
 
 /* Parent Space surfaces */
@@ -6436,15 +6436,15 @@ footer {
 #root .mc-parent.dark-mode .mc-parent-panel,
 #root .mc-parent.dark-mode .mc-parent-report-grid > *,
 #root .mc-parent.dark-mode .mc-parent-info-note {
-  background-color: #1f2937 !important;
-  border-color: #374151 !important;
+  background-color: var(--mc-surface) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* Parent PIN screen */
 #root .parent-access-shell.dark-mode .parent-pin-card {
-  background-color: #1f2937 !important;
-  color: #f1f5f9 !important;
-  border-color: #374151 !important;
+  background-color: var(--mc-surface) !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* Readable text throughout dark-mode sections */
@@ -6454,7 +6454,7 @@ footer {
 #root .mc-parent.dark-mode *,
 #root .parent-access-shell.dark-mode,
 #root .parent-access-shell.dark-mode * {
-  color: #f1f5f9;
+  color: var(--mc-text);
 }
 
 /* Muted supporting text */
@@ -6463,7 +6463,7 @@ footer {
 #root .app-shell.dark-mode .eyebrow,
 #root .mc-parent.dark-mode p,
 #root .mc-parent.dark-mode small {
-  color: #cbd5e1;
+  color: var(--mc-text-muted);
 }
 
 /* Inputs and text areas */
@@ -6471,16 +6471,16 @@ footer {
 #root .app-shell.dark-mode textarea,
 #root .app-shell.dark-mode select,
 #root .parent-access-shell.dark-mode input {
-  background-color: #111827 !important;
-  color: #f1f5f9 !important;
-  border-color: #4b5563 !important;
+  background-color: var(--mc-bg) !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* Placeholders */
 #root .app-shell.dark-mode input::placeholder,
 #root .app-shell.dark-mode textarea::placeholder,
 #root .parent-access-shell.dark-mode input::placeholder {
-  color: #9ca3af !important;
+  color: var(--mc-text-muted) !important;
   opacity: 1;
 }
 
@@ -6503,46 +6503,46 @@ footer {
 /* 1. HOME — WELCOME PANEL */
 #root .app-shell.dark-mode .welcome,
 #root .app-shell.dark-mode .welcome * {
-  color: #f8fafc !important;
-  -webkit-text-fill-color: #f8fafc !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 #root .app-shell.dark-mode .welcome-tag {
-  color: #e2e8f0 !important;
-  -webkit-text-fill-color: #e2e8f0 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* 2. BUILD YOUR DAY — ENTIRE CARD */
 #root .app-shell.dark-mode .planner-card#day,
 #root .app-shell.dark-mode .planner-card#day * {
-  color: #f1f5f9 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 #root .app-shell.dark-mode .planner-card#day {
-  background: #1f2937 !important;
-  border-color: #374151 !important;
+  background: var(--mc-surface) !important;
+  border-color: var(--mc-border) !important;
 }
 
 #root .app-shell.dark-mode .planner-card#day .planner-progress {
-  background: #293747 !important;
+  background: var(--mc-surface-2) !important;
 }
 
 #root .app-shell.dark-mode .planner-card#day .planner-progress-track {
-  background: #475569 !important;
+  background: var(--mc-primary-soft) !important;
 }
 
 /* 3. MY WORLD — ALL TEXT */
 #root .app-shell.dark-mode .my-world-section#world,
 #root .app-shell.dark-mode .my-world-section#world * {
-  color: #f1f5f9 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* My World main background */
 #root .app-shell.dark-mode .my-world-section#world {
-  background: #17251f !important;
-  border-color: #34483b !important;
+  background: var(--mc-surface) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* 4. HOME ISLAND TEXT */
@@ -6550,28 +6550,28 @@ footer {
 #root .app-shell.dark-mode .my-world-section#world .world-heading *,
 #root .app-shell.dark-mode .my-world-section#world .world-zone-button,
 #root .app-shell.dark-mode .my-world-section#world .world-zone-button * {
-  color: #f8fafc !important;
-  -webkit-text-fill-color: #f8fafc !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* 5. WORLD INSTRUCTION MESSAGE */
 #root .app-shell.dark-mode .my-world-section#world .world-message,
 #root .app-shell.dark-mode .my-world-section#world .world-message * {
-  color: #e2e8f0 !important;
-  -webkit-text-fill-color: #e2e8f0 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* 6. WORLD PROGRESS */
 #root .app-shell.dark-mode .my-world-section#world .world-progress,
 #root .app-shell.dark-mode .my-world-section#world .world-progress-stats,
 #root .app-shell.dark-mode .my-world-section#world .world-progress-stats * {
-  color: #f1f5f9 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 #root .app-shell.dark-mode .my-world-section#world .world-progress {
-  background: #24352c !important;
-  border-color: #405448 !important;
+  background: var(--mc-surface-2) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* 7. MY WORLD LABELS AND SECONDARY TEXT */
@@ -6580,8 +6580,8 @@ footer {
 #root .app-shell.dark-mode .my-world-section#world span,
 #root .app-shell.dark-mode .my-world-section#world strong,
 #root .app-shell.dark-mode .my-world-section#world label {
-  color: #e2e8f0 !important;
-  -webkit-text-fill-color: #e2e8f0 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* ==========================================
@@ -6590,26 +6590,26 @@ footer {
 
 /* Main planner card */
 #root .app-shell.dark-mode .planner-card#day {
-  background: #1b2736 !important;
-  color: #f1f5f9 !important;
-  border-color: #3b4a5e !important;
+  background: var(--mc-surface) !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* Make ALL planner text readable */
 #root .app-shell.dark-mode .planner-card#day,
 #root .app-shell.dark-mode .planner-card#day * {
-  color: #f1f5f9 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Progress panel */
 #root .app-shell.dark-mode .planner-card#day .planner-progress {
-  background: #29384b !important;
-  border: 1px solid #40516a !important;
+  background: var(--mc-surface-2) !important;
+  border: 1px solid var(--mc-border) !important;
 }
 
 #root .app-shell.dark-mode .planner-card#day .planner-progress-track {
-  background: #475569 !important;
+  background: var(--mc-primary-soft) !important;
 }
 
 #root .app-shell.dark-mode .planner-card#day .planner-progress-fill {
@@ -6618,60 +6618,60 @@ footer {
 
 /* Quick-start template cards */
 #root .app-shell.dark-mode .planner-card#day .planner-template-button {
-  background: #29384b !important;
-  border: 1px solid #465970 !important;
-  color: #f1f5f9 !important;
+  background: var(--mc-surface-2) !important;
+  border: 1px solid var(--mc-border) !important;
+  color: var(--mc-text) !important;
 }
 
 #root .app-shell.dark-mode .planner-card#day .planner-template-button * {
-  color: #f1f5f9 !important;
-  -webkit-text-fill-color: #f1f5f9 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Add task form */
 #root .app-shell.dark-mode .planner-card#day .planner-form {
-  background: #29384b !important;
-  border: 1px solid #465970 !important;
+  background: var(--mc-surface-2) !important;
+  border: 1px solid var(--mc-border) !important;
 }
 
 /* Task cards */
 #root .app-shell.dark-mode .planner-card#day .planner-task {
-  background: #29384b !important;
-  border: 1px solid #465970 !important;
+  background: var(--mc-surface-2) !important;
+  border: 1px solid var(--mc-border) !important;
   border-radius: 12px;
 }
 
 #root .app-shell.dark-mode .planner-card#day .planner-task.is-completed {
-  background: #263d37 !important;
+  background: var(--mc-surface-2) !important;
 }
 
 /* Saved template area */
 #root .app-shell.dark-mode .planner-card#day .planner-saved-template,
 #root .app-shell.dark-mode .planner-card#day .planner-save-template {
-  background: #29384b !important;
-  border: 1px solid #465970 !important;
+  background: var(--mc-surface-2) !important;
+  border: 1px solid var(--mc-border) !important;
   border-radius: 14px;
 }
 
 /* Form labels */
 #root .app-shell.dark-mode .planner-card#day label {
-  color: #e2e8f0 !important;
-  -webkit-text-fill-color: #e2e8f0 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* All planner input fields */
 #root .app-shell.dark-mode .planner-card#day input:not([type="checkbox"]),
 #root .app-shell.dark-mode .planner-card#day select {
-  background: #111827 !important;
-  color: #f8fafc !important;
-  -webkit-text-fill-color: #f8fafc !important;
-  border: 1px solid #526176 !important;
+  background: var(--mc-bg) !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
+  border: 1px solid var(--mc-border) !important;
 }
 
 /* Input placeholders */
 #root .app-shell.dark-mode .planner-card#day input::placeholder {
-  color: #aab7c8 !important;
-  -webkit-text-fill-color: #aab7c8 !important;
+  color: var(--mc-text-muted) !important;
+  -webkit-text-fill-color: var(--mc-text-muted) !important;
   opacity: 1 !important;
 }
 
@@ -6679,54 +6679,54 @@ footer {
 #root .app-shell.dark-mode .planner-card#day .planner-add-button,
 #root .app-shell.dark-mode .planner-card#day .planner-save-row button,
 #root .app-shell.dark-mode .planner-card#day .planner-saved-template button {
-  background: #527d64 !important;
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
-  border-color: #527d64 !important;
+  background: var(--mc-primary-soft) !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
 }
 
 /* Edit and delete buttons */
 #root .app-shell.dark-mode .planner-card#day .planner-edit-button,
 #root .app-shell.dark-mode .planner-card#day .planner-delete-button,
 #root .app-shell.dark-mode .planner-card#day .planner-cancel-button {
-  color: #e2e8f0 !important;
-  -webkit-text-fill-color: #e2e8f0 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Empty task messages and footer */
 #root .app-shell.dark-mode .planner-card#day .planner-empty,
 #root .app-shell.dark-mode .planner-card#day .planner-footer,
 #root .app-shell.dark-mode .planner-card#day .planner-task-time {
-  color: #cbd5e1 !important;
-  -webkit-text-fill-color: #cbd5e1 !important;
+  color: var(--mc-text-muted) !important;
+  -webkit-text-fill-color: var(--mc-text-muted) !important;
 }
 
 /* Keep checkboxes usable */
 #root .app-shell.dark-mode .planner-card#day input[type="checkbox"] {
-  accent-color: #86b99a;
+  accent-color: var(--mc-primary);
 }
 
 /* HOME — PERSONAL SPACE / WELCOME BANNER DARK MODE */
 
 #root .app-shell.dark-mode .welcome,
 #root .app-shell.dark-mode .welcome * {
-  color: #f8fafc !important;
-  -webkit-text-fill-color: #f8fafc !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
   opacity: 1 !important;
 }
 
 #root .app-shell.dark-mode .welcome p,
 #root .app-shell.dark-mode .welcome small {
-  color: #e2e8f0 !important;
-  -webkit-text-fill-color: #e2e8f0 !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 #root .app-shell.dark-mode .welcome h1,
 #root .app-shell.dark-mode .welcome h2,
 #root .app-shell.dark-mode .welcome h3,
 #root .app-shell.dark-mode .welcome strong {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 
@@ -6739,30 +6739,30 @@ footer {
 #root .app-shell.dark-mode .sidebar .active,
 #root .app-shell.dark-mode .sidebar button.active,
 #root .app-shell.dark-mode .sidebar [aria-current="page"] {
-  background: #344b40 !important;
-  color: #ffffff !important;
-  border-color: #668a75 !important;
-  -webkit-text-fill-color: #ffffff !important;
+  background: var(--mc-surface-2) !important;
+  color: var(--mc-text) !important;
+  border-color: var(--mc-border) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Text and icons inside selected item */
 #root .app-shell.dark-mode .sidebar .active *,
 #root .app-shell.dark-mode .sidebar button.active *,
 #root .app-shell.dark-mode .sidebar [aria-current="page"] * {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 /* Hover state */
 #root .app-shell.dark-mode .sidebar button:hover {
-  background: #293b35 !important;
-  color: #ffffff !important;
+  background: var(--mc-surface-2) !important;
+  color: var(--mc-text) !important;
 }
 
 /* Keep inactive navigation items readable */
 #root .app-shell.dark-mode .sidebar button:not(.active) {
-  color: #dbe5df !important;
-  -webkit-text-fill-color: #dbe5df !important;
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
 }
 
 
@@ -6949,56 +6949,56 @@ footer {
 
 /* AUDIO LIBRARY DARK MODE */
 .dark-mode .audio-premium {
-  background: #202923;
-  color: #edf3ed;
+  background: var(--mc-surface);
+  color: var(--mc-text);
 }
 
 .dark-mode .audio-premium h2,
 .dark-mode .audio-premium h3,
 .dark-mode .audio-premium p,
 .dark-mode .audio-premium small {
-  color: #edf3ed;
+  color: var(--mc-text);
 }
 
 .dark-mode .audio-premium .eyebrow {
-  color: #b6c8ba;
+  color: var(--mc-text-muted);
 }
 
 .dark-mode .audio-premium .premium-tag {
-  background: #49365e;
-  color: #eadcff;
+  background: var(--mc-surface-2);
+  color: var(--mc-text);
 }
 
 .dark-mode .audio-lock-banner {
-  background: #332a40;
-  border-color: #66517d;
-  color: #f1eafa;
+  background: var(--mc-surface);
+  border-color: var(--mc-border);
+  color: var(--mc-text);
 }
 
 .dark-mode .audio-lock-banner h3,
 .dark-mode .audio-lock-banner p {
-  color: #f1eafa;
+  color: var(--mc-text);
 }
 
 .dark-mode .audio-coming-soon {
-  background: #514064;
-  color: #f2e8ff;
+  background: var(--mc-surface-2);
+  color: var(--mc-text);
 }
 
 .dark-mode .audio-feature-card {
-  background: #29342d;
-  border-color: #45564a;
-  color: #edf3ed;
+  background: var(--mc-surface-2);
+  border-color: var(--mc-border);
+  color: var(--mc-text);
 }
 
 .dark-mode .audio-feature-card h3,
 .dark-mode .audio-feature-card p,
 .dark-mode .audio-feature-card small {
-  color: #edf3ed;
+  color: var(--mc-text);
 }
 
 .dark-mode .audio-premium-note {
-  color: #c3d0c5;
+  color: var(--mc-text-muted);
 }
 
 /* AUDIO LIBRARY RESPONSIVE LAYOUT */

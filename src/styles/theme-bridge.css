@@ -1,0 +1,125 @@
+/* =========================================================
+   MINDCRAFT THEME BRIDGE
+   Loaded after App.css. Connects the existing accessibility
+   setting classes to the design tokens and fixes global
+   readability issues. Page-level restyling happens later.
+   ========================================================= */
+
+/* ---------- Shells inherit token surface and type ---------- */
+
+.app-shell,
+.mc-parent {
+  background-color: var(--mc-bg);
+  color: var(--mc-text);
+  font-family: var(--mc-font-body);
+}
+
+/* ---------- Headings: always fully opaque and readable ---------- */
+
+#root :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--mc-font-heading);
+  opacity: 1;
+  text-shadow: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+/* Section headings had no colour of their own and picked up the
+   starter template's near-white heading colour under an OS dark
+   scheme. Give them the token colour in every theme. */
+#root .section-heading :is(h1, h2, h3),
+#root .accessibility-section :is(h2, h3),
+#root .audio-premium :is(h2, h3) {
+  color: var(--mc-text);
+}
+
+.app-shell.dark-mode :is(h1, h2, h3, h4, h5, h6),
+.mc-parent.dark-mode :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
+}
+
+.app-shell.high-contrast :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--mc-text) !important;
+  -webkit-text-fill-color: var(--mc-text) !important;
+}
+
+/* ---------- Dark mode: pastel shell elements use token surfaces ---------- */
+
+.app-shell.dark-mode .welcome-tag {
+  background: var(--mc-surface-2) !important;
+  color: var(--mc-text) !important;
+}
+
+.app-shell.dark-mode .premium-tag {
+  background: var(--mc-primary-soft) !important;
+  color: var(--mc-text) !important;
+}
+
+.app-shell.dark-mode .calm-card {
+  background: var(--mc-surface-2) !important;
+  color: var(--mc-text) !important;
+}
+
+.app-shell.dark-mode .calm-card :is(span, p) {
+  color: var(--mc-text-muted) !important;
+}
+
+/* ---------- Shared small labels pass 4.5:1 ---------- */
+
+.app-shell .eyebrow,
+.app-shell .nav-heading {
+  color: var(--mc-text-muted) !important;
+  opacity: 1 !important;
+}
+
+/* ---------- Focus ---------- */
+
+#root :focus-visible {
+  outline: 3px solid var(--mc-focus);
+  outline-offset: 2px;
+}
+
+/* ---------- Text size: 100 / 115 / 130% ---------- */
+
+.app-shell.text-large,
+.app-shell.text-extra-large {
+  font-size: inherit;
+}
+
+.app-shell.text-large {
+  zoom: 1.15;
+  height: calc(100dvh / 1.15);
+}
+
+.app-shell.text-extra-large {
+  zoom: 1.3;
+  height: calc(100dvh / 1.3);
+}
+
+/* ---------- Reduced Motion and Calm Mode ---------- */
+
+.app-shell.reduced-motion *,
+.app-shell.reduced-motion *::before,
+.app-shell.reduced-motion *::after,
+.app-shell.calm-mode *,
+.app-shell.calm-mode *::before,
+.app-shell.calm-mode *::after,
+.mc-parent-reduced-motion *,
+.mc-parent-reduced-motion *::before,
+.mc-parent-reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* ---------- High Contrast: controls and dividers ---------- */
+
+.app-shell.high-contrast :is(input, select, textarea) {
+  border-color: var(--mc-border-strong) !important;
+}
+
+.app-shell.high-contrast :is(p, span, small, label, li) {
+  color: var(--mc-text) !important;
+  opacity: 1 !important;
+}

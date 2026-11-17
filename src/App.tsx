@@ -1144,6 +1144,21 @@ const [rewardHistory, setRewardHistory] = useState<RewardHistoryItem[]>(() => {
   }, [accessibility])
 
   useEffect(() => {
+    const root = document.documentElement
+    root.dataset.theme = accessibility.darkMode ? 'dark' : 'light'
+    root.dataset.contrast = accessibility.highContrast ? 'more' : 'normal'
+    root.dataset.motion =
+      accessibility.reducedMotion || accessibility.calmMode ? 'reduced' : 'normal'
+    root.dataset.textSize = accessibility.textSize
+  }, [
+    accessibility.darkMode,
+    accessibility.highContrast,
+    accessibility.reducedMotion,
+    accessibility.calmMode,
+    accessibility.textSize,
+  ])
+
+  useEffect(() => {
     const sectionIds = [
       'home',
       'world',
